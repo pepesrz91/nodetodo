@@ -1,0 +1,5 @@
+cd /
+cd bin
+mongod.exe --dbpath C:\Users\pepe_\mongo-data
+
+cd / && cd Program Files && cd MongoDB/Server/4.0/bin && mongod.exe --dbpath C:\Users\pepe_\mongo-data
