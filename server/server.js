@@ -6,7 +6,7 @@ var {Todo} = require('./models/todos.js');
 var {Users} = require('./models/users.js');
 
 
-const todo = [{"text":"First test todo"},{"text":"Second test todo"}]
+
 
 
 var app = express();
