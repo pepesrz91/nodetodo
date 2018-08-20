@@ -11,6 +11,8 @@ var {Users} = require('./models/users.js');
 
 
 var app = express();
+const port = process.env.PORT || 3000;
+
 app.use(bodyParser.json());
 
 // POST /todos for resource creation
@@ -55,8 +57,8 @@ app.get('/todos/:id',(req,res)=>{
   // res.send(req.params);
 
 });
-app.listen(3000,()=>{
-  console.log('Started on port 3000');
+app.listen(port,()=>{
+  console.log(`Started in port ${port}`);
 });
 
 module.exports = {app}
