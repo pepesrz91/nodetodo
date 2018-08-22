@@ -106,3 +106,15 @@ describe('GET /todos/:id',()=>{
   //
   // });
 });
+
+describe('DELE /todos/:id',()=>{
+
+  it('Should remove and object by id',(done)=>{
+    request(app)
+      .delete(`/todos/${todos[0]._id}`)
+      .expect(200)
+      .expect((res)=>{
+        expect(res.body.id == todos[0]._id);
+      }).end(done);
+  });
+});
